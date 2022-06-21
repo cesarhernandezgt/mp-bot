@@ -15,7 +15,7 @@
 (function (jQuery) {
     // contributors list source Url
   const contributorsUrl =
-    "https://microprofile.github.io/microprofile-site/contributors.json";
+    "https://cesarhernandezgt.github.io/mp-bot/contributors.json";
 
   const scripts = [
     "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js",
@@ -29,7 +29,7 @@
   // to load in parallel use Promise.all(scripts.map(promiseGetScript))
   const arrayWaterfall = (array, fn) =>
     array.reduce((p, script) => p.then(() => fn(script)), Promise.resolve());
-  
+
   // check if element with id `microprofileio-contributors-div` exists
   const bootstrapEl = document.getElementById(
     "microprofileio-contributors-div"
